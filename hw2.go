@@ -13,5 +13,5 @@ func main() {
 	http.HandleFunc("/sub", ss.ServeHTTP1)
 	http.HandleFunc("/div", ss.ServeHTTP2)
 	http.HandleFunc("/mul", ss.ServeHTTP3)
-	http.ListenAndServe("localhost:9911", nil)
+	http.ListenAndServe(":9911", nil)
 }
