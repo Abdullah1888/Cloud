@@ -6,14 +6,6 @@ import (
 	"strconv"
 )
 
-// /add
-type AddService interface {
-	PostSum(x int, y int)
-	GetSum(x int, y int) (sum float64)
-	PutSum(x int, y int)
-	DeleteSum(x int, y int)
-}
-
 func ServeHTTP0(w http.ResponseWriter, r *http.Request) {
 	num1 := r.URL.Query()["x"][0]
 	num2 := r.URL.Query()["y"][0]
