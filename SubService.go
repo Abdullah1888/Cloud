@@ -18,11 +18,11 @@ type SubService interface {
 func (ss *cCache) PostSub(x int, y int) {
 
 	res := float64(x - y)
-	ss.Post(x, y, 1, res)
+	ss.Post(x , y , 1,res)
 }
 
 func (ss *cCache) GetSub(x int, y int) (sub float64) {
-
+	
 	return ss.Get(x, y, 1)
 }
 
